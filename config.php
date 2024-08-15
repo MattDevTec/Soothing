@@ -58,7 +58,7 @@ return [
 
     'use_custom_icons' => 'false',
 
-    // Is not set correct this will cause errors.
+    // If not set correct this will cause errors.
     'custom_icon_extension' => '.svg', // (.png, .jpg ...)
 
 
