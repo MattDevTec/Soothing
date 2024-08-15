@@ -12,14 +12,14 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /* Disable this if you don't want rounded avatars for users */
-/* .rounded-avatar {
+.rounded-avatar {
   border-radius: 50%;
-  -webkit-box-shadow: 0px 0px 0px 3px var(--button-background-color); 
+  -webkit-box-shadow: 0px 0px 0px 3px var(--button-background-color);
   box-shadow: 0px 0px 0px 3px var(--button-background-color);
   background-color: var(--button-background-color) !important;
   width: var(--image-width);
   height: var(--image-height);
-} */
+}
 
 @-webkit-keyframes rainbow {
   0% {
@@ -113,9 +113,6 @@
   margin-bottom: 20px !important;
   font-weight: 350;
   /* letter-spacing: 0.3rem; */
-
-  border: 1px solid black;
-  box-shadow: 6px 4px 0px 5px #000000 !important;
 }
 
 .button {
@@ -139,11 +136,9 @@
   vertical-align: middle;
   width: 20px;
   height: 20px;
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  filter: grayscale(100%);
+  filter: invert(1);
 }
 
 svg {
-  color: white !important;
+  filter: invert(0%) sepia(4%) saturate(5722%) hue-rotate(188deg) brightness(106%) contrast(103%);
 }
